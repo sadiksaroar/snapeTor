@@ -30,6 +30,10 @@ class $AssetsIconsGen {
   AssetGenImage get homeBootomNavigation =>
       const AssetGenImage('assets/icons/Home_bootomNavigation.png');
 
+  /// File path: assets/icons/Home_in_comment.png
+  AssetGenImage get homeInComment =>
+      const AssetGenImage('assets/icons/Home_in_comment.png');
+
   /// File path: assets/icons/apple_icon.png
   AssetGenImage get appleIcon =>
       const AssetGenImage('assets/icons/apple_icon.png');
@@ -54,6 +58,10 @@ class $AssetsIconsGen {
   AssetGenImage get chatBootomNavigation =>
       const AssetGenImage('assets/icons/chat_bootomNavigation.png');
 
+  /// File path: assets/icons/clock_home.png
+  AssetGenImage get clockHome =>
+      const AssetGenImage('assets/icons/clock_home.png');
+
   /// File path: assets/icons/crooss_icon.png
   AssetGenImage get croossIcon =>
       const AssetGenImage('assets/icons/crooss_icon.png');
@@ -73,6 +81,10 @@ class $AssetsIconsGen {
   AssetGenImage get googleIcon =>
       const AssetGenImage('assets/icons/google_icon.png');
 
+  /// File path: assets/icons/hom_conaitner_galley.png
+  AssetGenImage get homConaitnerGalley =>
+      const AssetGenImage('assets/icons/hom_conaitner_galley.png');
+
   /// File path: assets/icons/home_create_post_gallary.png
   AssetGenImage get homeCreatePostGallary =>
       const AssetGenImage('assets/icons/home_create_post_gallary.png');
@@ -89,6 +101,10 @@ class $AssetsIconsGen {
   AssetGenImage get icOutlineEdit =>
       const AssetGenImage('assets/icons/ic_outline-edit.png');
 
+  /// File path: assets/icons/like_green_home.png
+  AssetGenImage get likeGreenHome =>
+      const AssetGenImage('assets/icons/like_green_home.png');
+
   /// File path: assets/icons/location.png
   AssetGenImage get location =>
       const AssetGenImage('assets/icons/location.png');
@@ -104,6 +120,10 @@ class $AssetsIconsGen {
   AssetGenImage get treamPolcy =>
       const AssetGenImage('assets/icons/tream_polcy.png');
 
+  /// File path: assets/icons/uiw_like-o_home.png
+  AssetGenImage get uiwLikeOHome =>
+      const AssetGenImage('assets/icons/uiw_like-o_home.png');
+
   /// File path: assets/icons/usrr_profile.png
   AssetGenImage get usrrProfile =>
       const AssetGenImage('assets/icons/usrr_profile.png');
@@ -114,25 +134,30 @@ class $AssetsIconsGen {
     cameraFillUserProfile,
     editProfile,
     homeBootomNavigation,
+    homeInComment,
     appleIcon,
     arroInChatBoot,
     backIcon,
     carbonLocation,
     chagePassword,
     chatBootomNavigation,
+    clockHome,
     croossIcon,
     fluentPersonTag24Regular,
     footbol,
     forgetPasswordIconWriteIcon,
     googleIcon,
+    homConaitnerGalley,
     homeCreatePostGallary,
     icBaselinePlus,
     icBaselineTravelExplore,
     icOutlineEdit,
+    likeGreenHome,
     location,
     search,
     shekMojib,
     treamPolcy,
+    uiwLikeOHome,
     usrrProfile,
   ];
 }

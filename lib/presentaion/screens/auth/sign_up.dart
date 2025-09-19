@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:snape_tour/core/custom_assets/assets.gen.dart';
 import 'package:snape_tour/presentaion/widgets/saym_customInput/saym_customInput.dart';
 import 'package:snape_tour/utils/app_colors/app_colors.dart';
 
@@ -155,6 +157,24 @@ class _SignUpState extends State<SignUp> {
                       ),
                     ),
                     const SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Assets.icons.appleIcon.image(
+                          height: 45.h,
+                          width: 45.w,
+                          fit: BoxFit.contain,
+                        ),
+                        const SizedBox(width: 16),
+                        // AssetGenImage get aiplaceBackground =>
+                        //
+                        Assets.icons.googleIcon.image(
+                          height: 45.h,
+                          width: 45.w,
+                          fit: BoxFit.contain,
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),

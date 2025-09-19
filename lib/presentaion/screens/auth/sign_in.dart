@@ -193,7 +193,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                   ),
                 ),
                 onPressed: () {
-                  context.go('/homeViewPage');
+                  context.go('/homePage');
                 },
               ),
               SizedBox(height: 20),
