@@ -7,8 +7,13 @@ import 'package:snape_tour/presentaion/screens/auth/set_new_password.dart';
 import 'package:snape_tour/presentaion/screens/auth/sign_in.dart';
 import 'package:snape_tour/presentaion/screens/auth/sign_up.dart';
 import 'package:snape_tour/presentaion/screens/auth/verify_code.dart';
+import 'package:snape_tour/presentaion/screens/chatBoot/chat_bot.dart';
+import 'package:snape_tour/presentaion/screens/explore/expolre.dart';
+import 'package:snape_tour/presentaion/screens/home/cheack_in.dart';
+import 'package:snape_tour/presentaion/screens/home/create_post.dart';
 import 'package:snape_tour/presentaion/screens/home/home_page.dart';
 import 'package:snape_tour/presentaion/screens/splash_screen/splash_screen.dart';
+import 'package:snape_tour/presentaion/screens/user/user.dart';
 
 class AppRoutes {
   //  app routes
@@ -52,6 +57,39 @@ class AppRoutes {
         builder: (context, state) => HomePage(),
       ),
       // ================> auth end<==============
+
+      // home page tart hre
+      GoRoute(
+        path: AppRoutePaths.createpostpage,
+
+        builder: (context, state) => Createpostpage(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.cheackIn,
+        builder: (context, state) => CheackIn(),
+      ),
+
+      //==================ChatBoot page start here==================
+      GoRoute(
+        path: AppRoutePaths.chatBoot,
+        builder: (context, state) => ChatBot(),
+      ),
+      // ==================ChatBoot page end here==============
+
+      // ==================Explor page start here================
+      GoRoute(
+        path: AppRoutePaths.explor,
+        builder: (context, state) => Expolre(),
+      ),
+      // ==================Explor page end here==================
+
+      // ==================user page start here==================
+      GoRoute(
+        path: AppRoutePaths.user,
+        // ss
+        builder: (context, state) => User(),
+      ),
+      // ==================user page end here====================
     ],
   );
 }

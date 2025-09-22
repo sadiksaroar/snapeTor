@@ -26,6 +26,10 @@ class $AssetsIconsGen {
   AssetGenImage get editProfile =>
       const AssetGenImage('assets/icons/Edit_profile.png');
 
+  /// File path: assets/icons/Home_Icon.png
+  AssetGenImage get homeIcon =>
+      const AssetGenImage('assets/icons/Home_Icon.png');
+
   /// File path: assets/icons/Home_bootomNavigation.png
   AssetGenImage get homeBootomNavigation =>
       const AssetGenImage('assets/icons/Home_bootomNavigation.png');
@@ -33,6 +37,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Home_in_comment.png
   AssetGenImage get homeInComment =>
       const AssetGenImage('assets/icons/Home_in_comment.png');
+
+  /// File path: assets/icons/User.png
+  AssetGenImage get user => const AssetGenImage('assets/icons/User.png');
 
   /// File path: assets/icons/apple_icon.png
   AssetGenImage get appleIcon =>
@@ -46,6 +53,10 @@ class $AssetsIconsGen {
   AssetGenImage get backIcon =>
       const AssetGenImage('assets/icons/back_icon.png');
 
+  /// File path: assets/icons/bar-chart-2.png
+  AssetGenImage get barChart2 =>
+      const AssetGenImage('assets/icons/bar-chart-2.png');
+
   /// File path: assets/icons/carbon_location.png
   AssetGenImage get carbonLocation =>
       const AssetGenImage('assets/icons/carbon_location.png');
@@ -58,13 +69,35 @@ class $AssetsIconsGen {
   AssetGenImage get chatBootomNavigation =>
       const AssetGenImage('assets/icons/chat_bootomNavigation.png');
 
+  /// File path: assets/icons/chatboot-icont.png
+  AssetGenImage get chatbootIcont =>
+      const AssetGenImage('assets/icons/chatboot-icont.png');
+
+  /// File path: assets/icons/chatboot.png
+  AssetGenImage get chatboot =>
+      const AssetGenImage('assets/icons/chatboot.png');
+
+  /// File path: assets/icons/chatbot_edit.png
+  AssetGenImage get chatbotEdit =>
+      const AssetGenImage('assets/icons/chatbot_edit.png');
+
   /// File path: assets/icons/clock_home.png
   AssetGenImage get clockHome =>
       const AssetGenImage('assets/icons/clock_home.png');
 
+  /// File path: assets/icons/comment_base_icon.png
+  AssetGenImage get commentBaseIcon =>
+      const AssetGenImage('assets/icons/comment_base_icon.png');
+
   /// File path: assets/icons/crooss_icon.png
   AssetGenImage get croossIcon =>
       const AssetGenImage('assets/icons/crooss_icon.png');
+
+  /// File path: assets/icons/edit
+  String get edit => 'assets/icons/edit';
+
+  /// File path: assets/icons/expolor.png
+  AssetGenImage get expolor => const AssetGenImage('assets/icons/expolor.png');
 
   /// File path: assets/icons/fluent_person-tag-24-regular.png
   AssetGenImage get fluentPersonTag24Regular =>
@@ -105,9 +138,17 @@ class $AssetsIconsGen {
   AssetGenImage get likeGreenHome =>
       const AssetGenImage('assets/icons/like_green_home.png');
 
+  /// File path: assets/icons/like_white_In.png
+  AssetGenImage get likeWhiteIn =>
+      const AssetGenImage('assets/icons/like_white_In.png');
+
   /// File path: assets/icons/location.png
   AssetGenImage get location =>
       const AssetGenImage('assets/icons/location.png');
+
+  /// File path: assets/icons/message_icon.png
+  AssetGenImage get messageIcon =>
+      const AssetGenImage('assets/icons/message_icon.png');
 
   /// File path: assets/icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
@@ -129,20 +170,29 @@ class $AssetsIconsGen {
       const AssetGenImage('assets/icons/usrr_profile.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [
+  List<dynamic> get values => [
     backArrow,
     cameraFillUserProfile,
     editProfile,
+    homeIcon,
     homeBootomNavigation,
     homeInComment,
+    user,
     appleIcon,
     arroInChatBoot,
     backIcon,
+    barChart2,
     carbonLocation,
     chagePassword,
     chatBootomNavigation,
+    chatbootIcont,
+    chatboot,
+    chatbotEdit,
     clockHome,
+    commentBaseIcon,
     croossIcon,
+    edit,
+    expolor,
     fluentPersonTag24Regular,
     footbol,
     forgetPasswordIconWriteIcon,
@@ -153,7 +203,9 @@ class $AssetsIconsGen {
     icBaselineTravelExplore,
     icOutlineEdit,
     likeGreenHome,
+    likeWhiteIn,
     location,
+    messageIcon,
     search,
     shekMojib,
     treamPolcy,

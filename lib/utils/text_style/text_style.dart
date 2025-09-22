@@ -56,4 +56,38 @@ class AppTextStyles {
     letterSpacing: 0,
     color: AppColors.primaryText,
   );
+  static TextStyle interMedium18 = GoogleFonts.inter(
+    fontSize: 18,
+    fontWeight: FontWeight.w500, // 500 → Medium
+    fontStyle: FontStyle.normal,
+    height: 1.0, // line-height 100% → 1.0
+    letterSpacing: 0.0, // 0%
+    color: AppColors.primaryText,
+  );
+  static const TextStyle interBold24 = TextStyle(
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w700,
+    fontSize: 24,
+    height: 10 / 24, // line-height ÷ font-size
+    letterSpacing: 0,
+    color: AppColors.lightGray, // change if needed
+  );
+  static const TextStyle mediumText = TextStyle(
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w500, // 500 = Medium
+    fontSize: 18,
+    height: 23 / 18, // line-height ÷ font-size
+    letterSpacing: 0,
+    color: AppColors.lightGray, // change if needed
+    // textAlign is set in the Text widget, not TextStyle
+  );
+  static const TextStyle medium18Center = TextStyle(
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w500,
+    fontStyle: FontStyle.normal,
+    fontSize: 18,
+    height: 26 / 18, // line-height / font-size
+    letterSpacing: 0,
+    color: Color(0xFF1D1B20),
+  );
 }
