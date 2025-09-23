@@ -90,4 +90,23 @@ class AppTextStyles {
     letterSpacing: 0,
     color: Color(0xFF1D1B20),
   );
+
+  static const TextStyle myUserTextStyle = const TextStyle(
+    fontFamily: 'Inter', // Font family
+    fontWeight: FontWeight.w500, // Medium weight
+    fontStyle: FontStyle.normal, // Normal style (not italic)
+    fontSize: 18, // Font size
+    height: 26 / 18,
+    letterSpacing: 0,
+    color: AppColors.primaryText,
+    // textAlign is applied in the Text widget, not TextStyle
+  );
+  static const TextStyle myBoldTextStyle = const TextStyle(
+    fontFamily: 'Nunito Sans', // Font family
+    fontWeight: FontWeight.w700, // Bold weight
+    fontStyle: FontStyle.normal, // Normal style (not italic)
+    fontSize: 18, // Font size
+    height: 1.0, // Line height (100% of font size)
+    letterSpacing: 0, // Letter spacing (0%)
+  );
 }

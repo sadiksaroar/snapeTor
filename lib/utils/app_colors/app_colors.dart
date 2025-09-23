@@ -21,3 +21,5 @@ class AppColors {
   static const Color bottomNavBackground = Color(0xFFFAF9F6);
   static const Color deepBlue = Color(0xFF032C7B);
 }
+
+Color myColor = Color(0xFFF5F5F7);

@@ -53,9 +53,17 @@ class $AssetsIconsGen {
   AssetGenImage get backIcon =>
       const AssetGenImage('assets/icons/back_icon.png');
 
+  /// File path: assets/icons/back_icon_edit_profile.png
+  AssetGenImage get backIconEditProfile =>
+      const AssetGenImage('assets/icons/back_icon_edit_profile.png');
+
   /// File path: assets/icons/bar-chart-2.png
   AssetGenImage get barChart2 =>
       const AssetGenImage('assets/icons/bar-chart-2.png');
+
+  /// File path: assets/icons/camera_edit_profile.png
+  AssetGenImage get cameraEditProfile =>
+      const AssetGenImage('assets/icons/camera_edit_profile.png');
 
   /// File path: assets/icons/carbon_location.png
   AssetGenImage get carbonLocation =>
@@ -95,6 +103,10 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/edit
   String get edit => 'assets/icons/edit';
+
+  /// File path: assets/icons/edit_profile_picture.png
+  AssetGenImage get editProfilePicture =>
+      const AssetGenImage('assets/icons/edit_profile_picture.png');
 
   /// File path: assets/icons/expolor.png
   AssetGenImage get expolor => const AssetGenImage('assets/icons/expolor.png');
@@ -150,6 +162,10 @@ class $AssetsIconsGen {
   AssetGenImage get messageIcon =>
       const AssetGenImage('assets/icons/message_icon.png');
 
+  /// File path: assets/icons/profile_picture_jun.png
+  AssetGenImage get profilePictureJun =>
+      const AssetGenImage('assets/icons/profile_picture_jun.png');
+
   /// File path: assets/icons/search.png
   AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
 
@@ -181,7 +197,9 @@ class $AssetsIconsGen {
     appleIcon,
     arroInChatBoot,
     backIcon,
+    backIconEditProfile,
     barChart2,
+    cameraEditProfile,
     carbonLocation,
     chagePassword,
     chatBootomNavigation,
@@ -192,6 +210,7 @@ class $AssetsIconsGen {
     commentBaseIcon,
     croossIcon,
     edit,
+    editProfilePicture,
     expolor,
     fluentPersonTag24Regular,
     footbol,
@@ -206,6 +225,7 @@ class $AssetsIconsGen {
     likeWhiteIn,
     location,
     messageIcon,
+    profilePictureJun,
     search,
     shekMojib,
     treamPolcy,
@@ -216,6 +236,10 @@ class $AssetsIconsGen {
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/Profile 2.png
+  AssetGenImage get profile2 =>
+      const AssetGenImage('assets/images/Profile 2.png');
 
   /// File path: assets/images/Tajmahaol.png
   AssetGenImage get tajmahaol =>
@@ -265,6 +289,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    profile2,
     tajmahaol,
     aiplaceBackground,
     chatBotIcon,

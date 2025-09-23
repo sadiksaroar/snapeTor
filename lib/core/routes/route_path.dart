@@ -29,6 +29,8 @@ class AppRoutePaths {
   // +++++++++++++++++Explor page end here+++++++++++++++++
   // ==================user page start here==================
   static const String user = "/user";
-
+  static const String userProfile = '/userProfile';
+  static const String editProfile = "/editProfile";
+  static const String myAccount = "/myAccount";
   // ==================user page end here====================
 }
