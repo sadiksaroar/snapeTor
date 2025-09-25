@@ -27,10 +27,13 @@ class AppRoutePaths {
   static const String explor = "/explor";
 
   // +++++++++++++++++Explor page end here+++++++++++++++++
+
   // ==================user page start here==================
   static const String user = "/user";
   static const String userProfile = '/userProfile';
   static const String editProfile = "/editProfile";
   static const String myAccount = "/myAccount";
+  static const String changePassword = "/changePassword";
+  static const String svedExprience = "/savedExprience";
   // ==================user page end here====================
 }

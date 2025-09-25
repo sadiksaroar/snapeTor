@@ -237,6 +237,12 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Daniel.png
+  AssetGenImage get daniel => const AssetGenImage('assets/images/Daniel.png');
+
+  /// File path: assets/images/Oscar.png
+  AssetGenImage get oscar => const AssetGenImage('assets/images/Oscar.png');
+
   /// File path: assets/images/Profile 2.png
   AssetGenImage get profile2 =>
       const AssetGenImage('assets/images/Profile 2.png');
@@ -257,11 +263,17 @@ class $AssetsImagesGen {
   AssetGenImage get gardenPicture =>
       const AssetGenImage('assets/images/garden_picture.png');
 
+  /// File path: assets/images/helena.png
+  AssetGenImage get helena => const AssetGenImage('assets/images/helena.png');
+
   /// File path: assets/images/j.png
   AssetGenImage get j => const AssetGenImage('assets/images/j.png');
 
   /// File path: assets/images/juuniad.png
   AssetGenImage get juuniad => const AssetGenImage('assets/images/juuniad.png');
+
+  /// File path: assets/images/love.png
+  AssetGenImage get love => const AssetGenImage('assets/images/love.png');
 
   /// File path: assets/images/rose_and_bulding.png
   AssetGenImage get roseAndBulding =>
@@ -279,6 +291,9 @@ class $AssetsImagesGen {
   AssetGenImage get splashScreen =>
       const AssetGenImage('assets/images/splash-screen.png');
 
+  /// File path: assets/images/tajmohl.png
+  AssetGenImage get tajmohl => const AssetGenImage('assets/images/tajmohl.png');
+
   /// File path: assets/images/user_cover_picture.png
   AssetGenImage get userCoverPicture =>
       const AssetGenImage('assets/images/user_cover_picture.png');
@@ -289,17 +304,22 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    daniel,
+    oscar,
     profile2,
     tajmahaol,
     aiplaceBackground,
     chatBotIcon,
     gardenPicture,
+    helena,
     j,
     juuniad,
+    love,
     roseAndBulding,
     seaRose,
     signInScreen,
     splashScreen,
+    tajmohl,
     userCoverPicture,
     worldHomeCheckIn,
   ];

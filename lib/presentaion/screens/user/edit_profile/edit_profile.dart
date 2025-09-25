@@ -52,9 +52,14 @@ class _EditProfileState extends State<EditProfile> {
               ),
             ),
             SizedBox(height: 15),
-            buildSettingsTile(
-              Assets.icons.chagePassword.image(height: 30, width: 30),
-              "Change Password",
+            GestureDetector(
+              onTap: () {
+                context.push("/changePassword");
+              },
+              child: buildSettingsTile(
+                Assets.icons.chagePassword.image(height: 30, width: 30),
+                "Change Password",
+              ),
             ),
           ],
         ),

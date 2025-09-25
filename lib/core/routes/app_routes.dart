@@ -11,10 +11,12 @@ import 'package:snape_tour/presentaion/screens/chatBoot/chat_bot.dart';
 import 'package:snape_tour/presentaion/screens/explore/expolre.dart';
 import 'package:snape_tour/presentaion/screens/home/cheack_in.dart';
 import 'package:snape_tour/presentaion/screens/home/create_post.dart';
+import 'package:snape_tour/presentaion/screens/user/edit_profile/change_password/change_password.dart';
 import 'package:snape_tour/presentaion/screens/user/edit_profile/edit_profile.dart';
 import 'package:snape_tour/presentaion/screens/home/home_page.dart';
 import 'package:snape_tour/presentaion/screens/splash_screen/splash_screen.dart';
 import 'package:snape_tour/presentaion/screens/user/edit_profile/my_account/my_account.dart';
+import 'package:snape_tour/presentaion/screens/user/saved_experience/saved_exprience.dart';
 import 'package:snape_tour/presentaion/screens/user/user.dart';
 import 'package:snape_tour/presentaion/screens/user/user_profile/user_profile.dart';
 
@@ -103,6 +105,14 @@ class AppRoutes {
       GoRoute(
         path: AppRoutePaths.myAccount,
         builder: (context, state) => MyAccount(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.changePassword,
+        builder: (context, state) => ChangePassword(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.svedExprience,
+        builder: (context, state) => SavedExperience(),
       ),
       // ==================user page end here====================
     ],

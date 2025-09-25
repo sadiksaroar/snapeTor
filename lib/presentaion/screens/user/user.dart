@@ -103,9 +103,14 @@ class _UserState extends State<User> {
                   "Edit Profile",
                 ),
               ),
-              buildSettingsTile(
-                Assets.icons.shekMojib.image(height: 30, width: 30),
-                "Saved Experience",
+              GestureDetector(
+                onDoubleTap: () {
+                  context.push("/savedExprience");
+                },
+                child: buildSettingsTile(
+                  Assets.icons.shekMojib.image(height: 30, width: 30),
+                  "Saved Experience",
+                ),
               ),
               buildSettingsTile(
                 Assets.icons.footbol.image(height: 30, width: 30),
