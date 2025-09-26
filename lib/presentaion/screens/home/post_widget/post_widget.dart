@@ -9,7 +9,7 @@ class PostWidget extends StatelessWidget {
   final String postText;
   final String postImage;
   final String likedBy;
-  final String actionName;
+  // final String actionName;
 
   const PostWidget({
     super.key,
@@ -19,7 +19,7 @@ class PostWidget extends StatelessWidget {
     required this.postText,
     required this.postImage,
     required this.likedBy,
-    required this.actionName,
+    // required this.actionName,
   });
 
   @override
@@ -130,19 +130,23 @@ class PostWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
-                  width: 127,
-                  height: 32,
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: AppColors.primaryBackground,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Center(
-                    child: Text(
-                      actionName,
-                      style: const TextStyle(color: Colors.white),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF1E3A8A),
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 32,
+                      vertical: 16,
                     ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    elevation: 2,
+                  ),
+                  child: const Text(
+                    'Book Now',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
                 ),
               ],

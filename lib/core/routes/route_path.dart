@@ -35,5 +35,7 @@ class AppRoutePaths {
   static const String myAccount = "/myAccount";
   static const String changePassword = "/changePassword";
   static const String svedExprience = "/savedExprience";
+  static const String supportCenterPage = "/supportCenterPage";
+  static const String termsPolicyPage = "/termsPolicyPage";
   // ==================user page end here====================
 }

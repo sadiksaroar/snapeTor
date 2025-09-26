@@ -17,6 +17,8 @@ import 'package:snape_tour/presentaion/screens/home/home_page.dart';
 import 'package:snape_tour/presentaion/screens/splash_screen/splash_screen.dart';
 import 'package:snape_tour/presentaion/screens/user/edit_profile/my_account/my_account.dart';
 import 'package:snape_tour/presentaion/screens/user/saved_experience/saved_exprience.dart';
+import 'package:snape_tour/presentaion/screens/user/support_center/support_center.dart';
+import 'package:snape_tour/presentaion/screens/user/terms_policy/terms_policy.dart';
 import 'package:snape_tour/presentaion/screens/user/user.dart';
 import 'package:snape_tour/presentaion/screens/user/user_profile/user_profile.dart';
 
@@ -112,7 +114,15 @@ class AppRoutes {
       ),
       GoRoute(
         path: AppRoutePaths.svedExprience,
-        builder: (context, state) => SavedExperience(),
+        builder: (context, state) => TourCardPage(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.supportCenterPage,
+        builder: (context, state) => SupportCenterPage(),
+      ),
+      GoRoute(
+        path: AppRoutePaths.termsPolicyPage,
+        builder: (context, state) => TermsPolicyPage(),
       ),
       // ==================user page end here====================
     ],

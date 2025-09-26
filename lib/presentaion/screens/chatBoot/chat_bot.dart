@@ -240,8 +240,8 @@ class _ChatBotState extends State<ChatBot> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
-                      onPressed: () => context.push("/createpostpage"),
-                      icon: Assets.icons.icBaselinePlus.image(
+                      onPressed: () {},
+                      icon: Assets.icons.barChart2.image(
                         height: screenHeight * 0.035,
                         width: screenHeight * 0.035,
                       ),
@@ -256,10 +256,10 @@ class _ChatBotState extends State<ChatBot> {
                       ),
                     ),
                     IconButton(
-                      onPressed: () => context.push("/createpostpage"),
-                      icon: Assets.icons.icBaselinePlus.image(
-                        height: screenHeight * 0.035,
-                        width: screenHeight * 0.035,
+                      onPressed: () {},
+                      icon: Assets.icons.chatbotEdit.image(
+                        height: 16,
+                        width: 16,
                       ),
                       color: AppColors.primaryText,
                     ),

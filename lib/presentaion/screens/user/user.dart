@@ -112,14 +112,24 @@ class _UserState extends State<User> {
                   "Saved Experience",
                 ),
               ),
-              buildSettingsTile(
-                Assets.icons.footbol.image(height: 30, width: 30),
-                "Support Center",
+              GestureDetector(
+                onDoubleTap: () {
+                  context.push("/supportCenterPage");
+                },
+                child: buildSettingsTile(
+                  Assets.icons.footbol.image(height: 30, width: 30),
+                  "Support Center",
+                ),
               ),
 
-              buildSettingsTile(
-                Assets.icons.treamPolcy.image(height: 30, width: 30),
-                "Terms & Policy",
+              GestureDetector(
+                onDoubleTap: () {
+                  context.push("/termsPolicyPage");
+                },
+                child: buildSettingsTile(
+                  Assets.icons.treamPolcy.image(height: 30, width: 30),
+                  "Terms & Policy",
+                ),
               ),
 
               const SizedBox(height: 25),
