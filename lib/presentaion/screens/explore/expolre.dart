@@ -165,14 +165,6 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                         price: 'US \$ 80.00',
                       ),
                     ),
-                    // SizedBox(
-                    //   height: 400, // Fixed height for each card
-                    //   child: TravelTourCard(
-                    //     title: 'Venice Gondola Experience',
-                    //     imageUrl: 'https://picsum.photos/800/600?3',
-                    //     price: 'US \$ 45.00',
-                    //   ),
-                    // ),
                   ],
                 ),
 
@@ -187,8 +179,7 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                       timeAgo: "1 hr",
                       postText:
                           "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
-                      // postImage:
-                      //     "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+
                       postImage: Assets.images.gardenPicture.path,
                       likedBy: "Asif Mohammad",
                       // actionName: "",
@@ -200,8 +191,6 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                       timeAgo: "1 hr",
                       postText:
                           "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
-                      // postImage:
-                      //     "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
                       postImage: Assets.images.gardenPicture.path,
                       likedBy: "Asif Mohammad",
                     ),

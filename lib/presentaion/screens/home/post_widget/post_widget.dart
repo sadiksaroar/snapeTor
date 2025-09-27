@@ -73,7 +73,7 @@ class PostWidget extends StatelessWidget {
           const SizedBox(height: 8),
           ClipRRect(
             borderRadius: BorderRadius.circular(0),
-            child: Image.network(postImage, fit: BoxFit.cover),
+            child: Image.asset(postImage, fit: BoxFit.cover),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),

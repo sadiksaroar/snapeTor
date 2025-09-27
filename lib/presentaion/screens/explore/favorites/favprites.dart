@@ -267,7 +267,7 @@ class _TravelTourCardState extends State<TravelTourCard> {
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
                   ),
-                  child: Image.network(
+                  child: Image.asset(
                     widget.imageUrl,
                     height: 148,
                     width: double.infinity,
