@@ -1,6 +1,8 @@
+// // }
+
 // import 'package:flutter/material.dart';
 // import 'package:snape_tour/core/custom_assets/assets.gen.dart';
-// import 'package:snape_tour/presentaion/screens/home/PostWidget/post_widget.dart';
+// import 'package:snape_tour/presentaion/screens/home/post_widget/post_widget.dart';
 // import 'package:snape_tour/utils/app_colors/app_colors.dart';
 
 // class UserProfile extends StatefulWidget {
@@ -10,7 +12,6 @@
 //   State<UserProfile> createState() => _UserProfileState();
 // }
 
-// // AppTextStyles
 // class _UserProfileState extends State<UserProfile> {
 //   @override
 //   Widget build(BuildContext context) {
@@ -30,11 +31,11 @@
 //                   decoration: BoxDecoration(
 //                     image: DecorationImage(
 //                       image: Assets.images.userCoverPicture.image().image,
-//                       // fit: BoxFit.cover,/
+//                       fit: BoxFit.cover, // Added fit property
 //                     ),
 //                   ),
 //                 ),
-//                 // bootm add
+//                 // Bottom add
 //                 Positioned(
 //                   top: 180, // starts below the background image
 //                   child: Container(
@@ -48,7 +49,9 @@
 //                   top: 30,
 //                   left: 16,
 //                   child: IconButton(
-//                     onPressed: () {},
+//                     onPressed: () {
+//                       Navigator.pop(context);
+//                     },
 //                     icon: Assets.icons.backIconEditProfile.image(
 //                       width: 44,
 //                       height: 44,
@@ -57,7 +60,7 @@
 //                   ),
 //                 ),
 
-//                 //   [rpfile ]
+//                 // Profile Avatar
 //                 Positioned(
 //                   top: 115,
 //                   left: 18,
@@ -99,12 +102,13 @@
 //                     ],
 //                   ),
 //                 ),
+//                 // Edit Cover Photo Button
 //                 Positioned(
 //                   top: 130,
 //                   right: 16,
 //                   child: CircleAvatar(
 //                     radius: 18,
-//                     // backgroundColor: Colors.white,
+//                     backgroundColor: Colors.white,
 //                     child: Assets.icons.cameraEditProfile.image(
 //                       width: 34,
 //                       height: 35,
@@ -112,6 +116,7 @@
 //                     ),
 //                   ),
 //                 ),
+//                 // User Name
 //                 Positioned(
 //                   top: 260,
 //                   left: 18,
@@ -123,11 +128,12 @@
 //               ],
 //             ),
 //           ),
-//           SizedBox(height: 80),
-//           Container(
-//             width: double.infinity,
-//             padding: const EdgeInsets.all(25.0),
-//             child: Expanded(
+//           const SizedBox(height: 80),
+//           // Fixed: Use Expanded directly on the container
+//           Expanded(
+//             child: Container(
+//               width: double.infinity,
+//               padding: const EdgeInsets.all(15.0),
 //               child: ListView(
 //                 padding: const EdgeInsets.symmetric(vertical: 20),
 //                 children: [
@@ -138,10 +144,10 @@
 //                     timeAgo: "1 hr",
 //                     postText:
 //                         "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
-//                     postImage:
-//                         "https://calflyfisher.com/wp-content/uploads/2024/09/Lead-1044x783.jpg",
+//                     postImage: Assets.images.gardenPicture.path,
+
 //                     likedBy: "Asif Mohammad",
-//                     actionName: "Sadik",
+//                     // actionName: "",
 //                   ),
 //                   const SizedBox(height: 20),
 //                   PostWidget(
@@ -150,10 +156,9 @@
 //                     timeAgo: "1 hr",
 //                     postText:
 //                         "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
-//                     postImage:
-//                         "https://calflyfisher.com/wp-content/uploads/2024/09/Lead-1044x783.jpg",
+//                     postImage: Assets.images.gardenPicture.path,
+
 //                     likedBy: "Asif Mohammad",
-//                     actionName: "Sadik",
 //                   ),
 //                 ],
 //               ),
@@ -165,10 +170,12 @@
 //   }
 // }
 
+// }
+
 import 'package:flutter/material.dart';
 import 'package:snape_tour/core/custom_assets/assets.gen.dart';
-import 'package:snape_tour/presentaion/screens/home/post_widget/post_widget.dart';
 import 'package:snape_tour/utils/app_colors/app_colors.dart';
+import 'package:snape_tour/presentaion/screens/home/post_widget/post_widget.dart';
 
 class UserProfile extends StatefulWidget {
   const UserProfile({super.key});

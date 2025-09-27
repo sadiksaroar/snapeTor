@@ -99,7 +99,7 @@ class _UserState extends State<User> {
                   context.push("/editProfile");
                 },
                 child: buildSettingsTile(
-                  Assets.icons.editProfile.image(height: 30, width: 30),
+                  Assets.icons.icOutlineEdit.image(height: 18, width: 18),
                   "Edit Profile",
                 ),
               ),
@@ -108,7 +108,7 @@ class _UserState extends State<User> {
                   context.push("/savedExprience");
                 },
                 child: buildSettingsTile(
-                  Assets.icons.shekMojib.image(height: 30, width: 30),
+                  Assets.icons.shekMojib.image(height: 18, width: 18),
                   "Saved Experience",
                 ),
               ),
@@ -117,7 +117,7 @@ class _UserState extends State<User> {
                   context.push("/supportCenterPage");
                 },
                 child: buildSettingsTile(
-                  Assets.icons.footbol.image(height: 30, width: 30),
+                  Assets.icons.footbol.image(height: 18, width: 18),
                   "Support Center",
                 ),
               ),
@@ -127,7 +127,7 @@ class _UserState extends State<User> {
                   context.push("/termsPolicyPage");
                 },
                 child: buildSettingsTile(
-                  Assets.icons.treamPolcy.image(height: 30, width: 30),
+                  Assets.icons.treamPolcy.image(height: 18, width: 18),
                   "Terms & Policy",
                 ),
               ),

@@ -47,7 +47,7 @@ class _EditProfileState extends State<EditProfile> {
                 context.push("/myAccount");
               },
               child: buildSettingsTile(
-                Assets.icons.editProfilePicture.image(height: 30, width: 30),
+                Assets.icons.user.image(height: 24, width: 24),
                 "My Account",
               ),
             ),
@@ -57,7 +57,7 @@ class _EditProfileState extends State<EditProfile> {
                 context.push("/changePassword");
               },
               child: buildSettingsTile(
-                Assets.icons.chagePassword.image(height: 30, width: 30),
+                Assets.icons.chagePassword.image(height: 24, width: 24),
                 "Change Password",
               ),
             ),

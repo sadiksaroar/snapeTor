@@ -188,6 +188,7 @@ import 'package:snape_tour/core/custom_assets/assets.gen.dart';
 import 'package:snape_tour/core/routes/route_path.dart';
 import 'package:snape_tour/presentaion/widgets/custom_navbar/custom_navbar.dart';
 import 'package:snape_tour/utils/app_colors/app_colors.dart';
+import 'package:snape_tour/utils/text_style/text_style.dart';
 
 class ChatBot extends StatefulWidget {
   const ChatBot({super.key});
@@ -323,13 +324,19 @@ class _ChatBotState extends State<ChatBot> {
                       ),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Search here",
+                          hintText: "Type your Promot here.......  ",
+                          hintStyle: AppTextStyles
+                              .interStyle, // 👈 apply your Inter style here
+
                           suffixIcon: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Icon(Icons.mic, color: AppColors.deepBlue),
+                              Assets.icons.group.image(height: 24, width: 24),
                               SizedBox(width: screenWidth * 0.02),
-                              Icon(Icons.image, color: AppColors.deepBlue),
+                              Assets.icons.micChatBoot.image(
+                                height: 24,
+                                width: 24,
+                              ),
                               SizedBox(width: screenWidth * 0.02),
                             ],
                           ),

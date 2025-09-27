@@ -109,4 +109,15 @@ class AppTextStyles {
     height: 1.0, // Line height (100% of font size)
     letterSpacing: 0, // Letter spacing (0%)
   );
+  static const TextStyle interStyle = TextStyle(
+    fontFamily: 'Inter', // make sure Inter is added in pubspec.yaml
+    fontWeight: FontWeight.w400, // 400 = regular
+    fontStyle: FontStyle.normal, // equivalent to "Regular"
+    fontSize: 16,
+    height:
+        24 /
+        16, // Flutter uses multiple of fontSize → 24px line-height ÷ 16px font-size
+    letterSpacing: 0.0, // 0%
+    color: Color(0xFFC8C8C8), // hex to Flutter color
+  );
 }

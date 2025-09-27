@@ -26,9 +26,8 @@ class $AssetsIconsGen {
   AssetGenImage get editProfile =>
       const AssetGenImage('assets/icons/Edit_profile.png');
 
-  /// File path: assets/icons/Home_Icon.png
-  AssetGenImage get homeIcon =>
-      const AssetGenImage('assets/icons/Home_Icon.png');
+  /// File path: assets/icons/Group.png
+  AssetGenImage get group => const AssetGenImage('assets/icons/Group.png');
 
   /// File path: assets/icons/Home_bootomNavigation.png
   AssetGenImage get homeBootomNavigation =>
@@ -127,6 +126,10 @@ class $AssetsIconsGen {
   AssetGenImage get homConaitnerGalley =>
       const AssetGenImage('assets/icons/hom_conaitner_galley.png');
 
+  /// File path: assets/icons/hom_conaitner_galley.png.png
+  AssetGenImage get homConaitnerGalleyPng =>
+      const AssetGenImage('assets/icons/hom_conaitner_galley.png.png');
+
   /// File path: assets/icons/home_create_post_gallary.png
   AssetGenImage get homeCreatePostGallary =>
       const AssetGenImage('assets/icons/home_create_post_gallary.png');
@@ -155,9 +158,25 @@ class $AssetsIconsGen {
   AssetGenImage get location =>
       const AssetGenImage('assets/icons/location.png');
 
+  /// File path: assets/icons/love_icon_ReadColor.png
+  AssetGenImage get loveIconReadColorPng =>
+      const AssetGenImage('assets/icons/love_icon_ReadColor.png');
+
+  /// File path: assets/icons/love_icon_ReadColor.pngpng
+  String get loveIconReadColorPngpng =>
+      'assets/icons/love_icon_ReadColor.pngpng';
+
+  /// File path: assets/icons/love_icon_whiteColor.png
+  AssetGenImage get loveIconWhiteColor =>
+      const AssetGenImage('assets/icons/love_icon_whiteColor.png');
+
   /// File path: assets/icons/message_icon.png
   AssetGenImage get messageIcon =>
       const AssetGenImage('assets/icons/message_icon.png');
+
+  /// File path: assets/icons/mic_chatBoot.png
+  AssetGenImage get micChatBoot =>
+      const AssetGenImage('assets/icons/mic_chatBoot.png');
 
   /// File path: assets/icons/profile_picture_jun.png
   AssetGenImage get profilePictureJun =>
@@ -174,20 +193,16 @@ class $AssetsIconsGen {
   AssetGenImage get treamPolcy =>
       const AssetGenImage('assets/icons/tream_polcy.png');
 
-  /// File path: assets/icons/uiw_like-o_home.png
-  AssetGenImage get uiwLikeOHome =>
-      const AssetGenImage('assets/icons/uiw_like-o_home.png');
-
   /// File path: assets/icons/usrr_profile.png
   AssetGenImage get usrrProfile =>
       const AssetGenImage('assets/icons/usrr_profile.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [
+  List<dynamic> get values => [
     backArrow,
     cameraFillUserProfile,
     editProfile,
-    homeIcon,
+    group,
     homeBootomNavigation,
     homeInComment,
     user,
@@ -213,6 +228,7 @@ class $AssetsIconsGen {
     forgetPasswordIconWriteIcon,
     googleIcon,
     homConaitnerGalley,
+    homConaitnerGalleyPng,
     homeCreatePostGallary,
     icBaselinePlus,
     icBaselineTravelExplore,
@@ -220,12 +236,15 @@ class $AssetsIconsGen {
     likeGreenHome,
     likeWhiteIn,
     location,
+    loveIconReadColorPng,
+    loveIconReadColorPngpng,
+    loveIconWhiteColor,
     messageIcon,
+    micChatBoot,
     profilePictureJun,
     search,
     shekMojib,
     treamPolcy,
-    uiwLikeOHome,
     usrrProfile,
   ];
 }

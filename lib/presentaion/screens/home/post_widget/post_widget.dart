@@ -9,7 +9,6 @@ class PostWidget extends StatelessWidget {
   final String postText;
   final String postImage;
   final String likedBy;
-  // final String actionName;
 
   const PostWidget({
     super.key,
@@ -19,17 +18,23 @@ class PostWidget extends StatelessWidget {
     required this.postText,
     required this.postImage,
     required this.likedBy,
-    // required this.actionName,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: AppColors.greyBackground),
+      decoration: BoxDecoration(
+        color: AppColors.greyBackground,
+        borderRadius: BorderRadius.circular(10),
+      ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // User info
           ListTile(
-            leading: CircleAvatar(backgroundImage: Assets.images.j.provider()),
+            leading: CircleAvatar(
+              backgroundImage: Assets.images.profile2.image().image,
+            ),
             title: Text(
               userName,
               style: const TextStyle(fontWeight: FontWeight.bold),
@@ -60,6 +65,8 @@ class PostWidget extends StatelessWidget {
               ],
             ),
           ),
+
+          // Post Text
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
@@ -71,21 +78,30 @@ class PostWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
+
+          // Post Image
           ClipRRect(
             borderRadius: BorderRadius.circular(0),
             child: Image.asset(postImage, fit: BoxFit.cover),
           ),
+          const SizedBox(height: 8),
+
+          // Likes / Comments / Book Now
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                // Likes and actions
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
-                        Assets.icons.likeGreenHome.image(),
+                        Assets.icons.loveIconReadColorPng.image(
+                          height: 16,
+                          width: 16,
+                        ),
                         const SizedBox(width: 8),
                         Text(
                           likedBy,
@@ -101,7 +117,10 @@ class PostWidget extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Assets.icons.likeWhiteIn.image(),
+                            Assets.icons.loveIconWhiteColor.image(
+                              height: 16,
+                              width: 16,
+                            ),
                             const SizedBox(width: 8),
                             const Text(
                               "Like",
@@ -115,7 +134,10 @@ class PostWidget extends StatelessWidget {
                         const SizedBox(width: 20),
                         Row(
                           children: [
-                            Assets.icons.commentBaseIcon.image(),
+                            Assets.icons.commentBaseIcon.image(
+                              height: 16,
+                              width: 16,
+                            ),
                             const SizedBox(width: 8),
                             const Text(
                               "Comment",
@@ -130,23 +152,29 @@ class PostWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF1E3A8A),
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 32,
-                      vertical: 16,
+
+                // Book Now Button
+                SizedBox(
+                  height: 32,
+                  width: 127,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFF1E3A8A),
+                      foregroundColor: Colors.white,
+                      padding: EdgeInsets.zero,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      elevation: 2,
                     ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                    child: const Text(
+                      'Book Now',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                    elevation: 2,
-                  ),
-                  child: const Text(
-                    'Book Now',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
                 ),
               ],
