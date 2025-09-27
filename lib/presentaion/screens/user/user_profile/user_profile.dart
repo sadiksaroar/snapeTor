@@ -298,7 +298,7 @@ class _UserProfileState extends State<UserProfile> {
           Expanded(
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(25.0),
+              padding: const EdgeInsets.all(15.0),
               child: ListView(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 children: [
@@ -310,9 +310,9 @@ class _UserProfileState extends State<UserProfile> {
                     postText:
                         "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
                     postImage:
-                        "https://calflyfisher.com/wp-content/uploads/2024/09/Lead-1044x783.jpg",
+                        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
                     likedBy: "Asif Mohammad",
-                    // actionName: "Sadik",
+                    // actionName: "",
                   ),
                   const SizedBox(height: 20),
                   PostWidget(
@@ -322,9 +322,8 @@ class _UserProfileState extends State<UserProfile> {
                     postText:
                         "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
                     postImage:
-                        "https://calflyfisher.com/wp-content/uploads/2024/09/Lead-1044x783.jpg",
+                        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
                     likedBy: "Asif Mohammad",
-                    // actionName: "Sadik",
                   ),
                 ],
               ),

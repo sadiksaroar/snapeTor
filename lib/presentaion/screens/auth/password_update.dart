@@ -76,7 +76,7 @@ class PasswordUpdate extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  context.go('/passwordUpdate');
+                  context.push('/homePage');
                 },
               ),
             ],

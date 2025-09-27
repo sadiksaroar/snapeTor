@@ -456,8 +456,9 @@ class _HomePageState extends State<HomePage> {
               timeAgo: "1 hr",
               postText:
                   "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
-              postImage:
-                  "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+              // postImage:
+              //     "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+              postImage: Assets.images.gardenPicture.path,
               likedBy: "Asif Mohammad",
               // actionName: "",
             ),
@@ -468,8 +469,9 @@ class _HomePageState extends State<HomePage> {
               timeAgo: "1 hr",
               postText:
                   "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
-              postImage:
-                  "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+              // postImage:
+              //     "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+              postImage: Assets.images.gardenPicture.path,
               likedBy: "Asif Mohammad",
             ),
           ],

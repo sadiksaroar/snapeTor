@@ -8,6 +8,7 @@ import 'package:snape_tour/presentaion/screens/auth/sign_in.dart';
 import 'package:snape_tour/presentaion/screens/auth/sign_up.dart';
 import 'package:snape_tour/presentaion/screens/auth/verify_code.dart';
 import 'package:snape_tour/presentaion/screens/chatBoot/chat_bot.dart';
+import 'package:snape_tour/presentaion/screens/chatBoot/chatboot_demo.dart';
 import 'package:snape_tour/presentaion/screens/explore/expolre.dart';
 import 'package:snape_tour/presentaion/screens/home/cheack_in.dart';
 import 'package:snape_tour/presentaion/screens/home/create_post.dart';
@@ -81,6 +82,11 @@ class AppRoutes {
         path: AppRoutePaths.chatBoot,
         builder: (context, state) => ChatBot(),
       ),
+      GoRoute(
+        path: AppRoutePaths.chatBootDemo,
+        builder: (context, state) => ChatBootDemo(),
+      ),
+
       // ==================ChatBoot page end here==============
 
       // ==================Explor page start here================

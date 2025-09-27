@@ -28,7 +28,7 @@ class _PasswordResetState extends State<PasswordReset> {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            context.push('/signin');
+            context.pop('/signin');
           },
         ),
         elevation: 0,
@@ -70,7 +70,7 @@ class _PasswordResetState extends State<PasswordReset> {
                 height: 50,
                 child: CustomButton(
                   onPressed: () {
-                    context.go('/setNewPassword'); // ✅ redirect to reset page
+                    context.push('/setNewPassword'); // ✅ redirect to reset page
                   },
                   backgroundColor: AppColors.primaryBackground,
                   borderRadius: 15,

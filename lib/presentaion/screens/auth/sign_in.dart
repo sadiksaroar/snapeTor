@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -157,7 +154,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
                     child: InkWell(
-                      onTap: () => {context.go("/forgetPasswordScreen")},
+                      onTap: () => {context.push("/forgetPasswordScreen")},
                       child: const Text(
                         'Forgot password?',
                         style: TextStyle(
@@ -193,7 +190,7 @@ class _SiginInViewsState extends State<SiginInViews> {
                   ),
                 ),
                 onPressed: () {
-                  context.go('/homePage');
+                  context.push('/homePage');
                 },
               ),
               SizedBox(height: 20),

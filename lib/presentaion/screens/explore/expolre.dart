@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:snape_tour/core/custom_assets/assets.gen.dart';
 import 'package:snape_tour/core/routes/route_path.dart';
-import 'package:snape_tour/main.dart';
 import 'package:snape_tour/presentaion/screens/explore/favorites/favprites.dart';
+import 'package:snape_tour/presentaion/screens/home/post_widget/post_widget.dart';
 import 'package:snape_tour/presentaion/widgets/custom_navbar/custom_navbar.dart';
 import 'package:snape_tour/utils/app_colors/app_colors.dart';
 
@@ -58,7 +58,7 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
       body: Column(
         children: [
           SizedBox(
-            height: 318,
+            height: 305,
             child: Stack(
               children: [
                 Assets.images.aiplaceBackground.image(),
@@ -80,7 +80,7 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                   ),
                 ),
                 const Positioned(
-                  top: 232,
+                  top: 220,
                   left: 0,
                   right: 0,
                   child: Text(
@@ -153,7 +153,7 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                       height: 400, // Fixed height for each card
                       child: TravelTourCard(
                         title: 'Amalfi Coast Scenic Drive Day Tour',
-                        imageUrl: 'https://picsum.photos/800/600?1',
+                        imageUrl: Assets.images.roseAndBulding.path,
                         price: 'US \$ 64.55',
                       ),
                     ),
@@ -161,18 +161,18 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                       height: 400, // Fixed height for each card
                       child: TravelTourCard(
                         title: 'Rome City Highlights Guided Tour',
-                        imageUrl: 'https://picsum.photos/800/600?2',
+                        imageUrl: Assets.images.seaRose.path,
                         price: 'US \$ 80.00',
                       ),
                     ),
-                    SizedBox(
-                      height: 400, // Fixed height for each card
-                      child: TravelTourCard(
-                        title: 'Venice Gondola Experience',
-                        imageUrl: 'https://picsum.photos/800/600?3',
-                        price: 'US \$ 45.00',
-                      ),
-                    ),
+                    // SizedBox(
+                    //   height: 400, // Fixed height for each card
+                    //   child: TravelTourCard(
+                    //     title: 'Venice Gondola Experience',
+                    //     imageUrl: 'https://picsum.photos/800/600?3',
+                    //     price: 'US \$ 45.00',
+                    //   ),
+                    // ),
                   ],
                 ),
 
@@ -180,21 +180,30 @@ class _ExpolreState extends State<Expolre> with SingleTickerProviderStateMixin {
                 ListView(
                   padding: EdgeInsets.zero,
                   children: [
-                    SizedBox(
-                      height: 400, // Fixed height for each card
-                      child: TravelTourCard(
-                        title: 'Florence Art & Culture Tour',
-                        imageUrl: 'https://picsum.photos/800/600?4',
-                        price: 'US \$ 95.00',
-                      ),
+                    const SizedBox(height: 20),
+                    PostWidget(
+                      userName: "Abdullah Al Junaid",
+                      location: "Naples, Italy",
+                      timeAgo: "1 hr",
+                      postText:
+                          "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
+                      // postImage:
+                      //     "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+                      postImage: Assets.images.gardenPicture.path,
+                      likedBy: "Asif Mohammad",
+                      // actionName: "",
                     ),
-                    SizedBox(
-                      height: 400, // Fixed height for each card
-                      child: TravelTourCard(
-                        title: 'Tuscany Wine Tasting Experience',
-                        imageUrl: 'https://picsum.photos/800/600?5',
-                        price: 'US \$ 120.00',
-                      ),
+                    const SizedBox(height: 20),
+                    PostWidget(
+                      userName: "Abdullah Al Junaid",
+                      location: "Naples, Italy",
+                      timeAgo: "1 hr",
+                      postText:
+                          "Lost in the charm of Naples — where every street feels like a story waiting to be told.",
+                      // postImage:
+                      //     "https://upload.wikimedia.org/wikipedia/commons/e/ea/Castello_Aragonese_dell%27isola_di_Ischia.jpg",
+                      postImage: Assets.images.gardenPicture.path,
+                      likedBy: "Asif Mohammad",
                     ),
                   ],
                 ),

@@ -101,9 +101,6 @@ class $AssetsIconsGen {
   AssetGenImage get croossIcon =>
       const AssetGenImage('assets/icons/crooss_icon.png');
 
-  /// File path: assets/icons/edit
-  String get edit => 'assets/icons/edit';
-
   /// File path: assets/icons/edit_profile_picture.png
   AssetGenImage get editProfilePicture =>
       const AssetGenImage('assets/icons/edit_profile_picture.png');
@@ -186,7 +183,7 @@ class $AssetsIconsGen {
       const AssetGenImage('assets/icons/usrr_profile.png');
 
   /// List of all assets
-  List<dynamic> get values => [
+  List<AssetGenImage> get values => [
     backArrow,
     cameraFillUserProfile,
     editProfile,
@@ -209,7 +206,6 @@ class $AssetsIconsGen {
     clockHome,
     commentBaseIcon,
     croossIcon,
-    edit,
     editProfilePicture,
     expolor,
     fluentPersonTag24Regular,
@@ -287,6 +283,10 @@ class $AssetsImagesGen {
   AssetGenImage get signInScreen =>
       const AssetGenImage('assets/images/sign_in_screen.png');
 
+  /// File path: assets/images/snaptourlogo5 1.png
+  AssetGenImage get snaptourlogo51 =>
+      const AssetGenImage('assets/images/snaptourlogo5 1.png');
+
   /// File path: assets/images/splash-screen.png
   AssetGenImage get splashScreen =>
       const AssetGenImage('assets/images/splash-screen.png');
@@ -318,6 +318,7 @@ class $AssetsImagesGen {
     roseAndBulding,
     seaRose,
     signInScreen,
+    snaptourlogo51,
     splashScreen,
     tajmohl,
     userCoverPicture,

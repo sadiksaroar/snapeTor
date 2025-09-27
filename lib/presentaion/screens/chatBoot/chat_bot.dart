@@ -232,6 +232,8 @@ class _ChatBotState extends State<ChatBot> {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               /// Top Section
               Padding(
@@ -268,7 +270,7 @@ class _ChatBotState extends State<ChatBot> {
               ),
 
               /// Middle Section
-              SizedBox(height: screenHeight * 0.03),
+              SizedBox(height: 100),
 
               Text(
                 "Welcome to ChatBot",
@@ -344,17 +346,22 @@ class _ChatBotState extends State<ChatBot> {
                     ),
                   ),
                   SizedBox(width: screenWidth * 0.03),
-                  Container(
-                    height: screenHeight * 0.065,
-                    width: screenHeight * 0.065,
-                    decoration: BoxDecoration(
-                      color: AppColors.deepBlue,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Icon(
-                      Icons.send,
-                      color: Colors.white,
-                      size: screenHeight * 0.03,
+                  GestureDetector(
+                    onDoubleTap: () {
+                      context.push("/chatBootDemo");
+                    },
+                    child: Container(
+                      height: screenHeight * 0.065,
+                      width: screenHeight * 0.065,
+                      decoration: BoxDecoration(
+                        color: AppColors.deepBlue,
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                      child: Icon(
+                        Icons.send,
+                        color: Colors.white,
+                        size: screenHeight * 0.03,
+                      ),
                     ),
                   ),
                 ],

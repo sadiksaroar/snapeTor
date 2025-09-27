@@ -11,33 +11,29 @@ class TourCardPage extends StatelessWidget {
     final List<Map<String, dynamic>> tours = [
       {
         "user": "Helena",
-        "avatar": "https://i.pravatar.cc/150?img=5",
-        "image":
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ensemble_Shakhi_Zinda_%288%29.JPG/800px-Ensemble_Shakhi_Zinda_%288%29.JPG",
+        "avatar": Assets.images.helena.path,
+        "image": Assets.images.tajmahaol.path,
         "title": "Pompeii & Vesuvius Day Tour from Naples.....",
         "price": 150,
       },
       {
         "user": "Oscar",
-        "avatar": "https://i.pravatar.cc/150?img=6",
-        "image":
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ensemble_Shakhi_Zinda_%288%29.JPG/800px-Ensemble_Shakhi_Zinda_%288%29.JPG",
+        "avatar": Assets.images.oscar.path,
+        "image": Assets.images.tajmahaol.path,
         "title": "Pompeii & Vesuvius Day Tour from Naples.....",
         "price": 150,
       },
       {
         "user": "Daniel",
-        "avatar": "https://i.pravatar.cc/150?img=7",
-        "image":
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ensemble_Shakhi_Zinda_%288%29.JPG/800px-Ensemble_Shakhi_Zinda_%288%29.JPG",
+        "avatar": Assets.images.daniel.path,
+        "image": Assets.images.tajmahaol.path,
         "title": "Pompeii & Vesuvius Day Tour from Naples.....",
         "price": 150,
       },
       {
         "user": "Oscar",
-        "avatar": "https://i.pravatar.cc/150?img=8",
-        "image":
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ensemble_Shakhi_Zinda_%288%29.JPG/800px-Ensemble_Shakhi_Zinda_%288%29.JPG",
+        "avatar": Assets.images.oscar.path,
+        "image": Assets.images.tajmahaol.path,
         "title": "Pompeii & Vesuvius Day Tour from Naples.....",
         "price": 150,
       },

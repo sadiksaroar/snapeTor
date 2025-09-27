@@ -48,7 +48,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             fit: BoxFit.contain,
           ), // ✅ Added comma
           onPressed: () {
-            context.push('/signin');
+            context.pop('/signin');
           },
         ),
         elevation: 0,
@@ -116,7 +116,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                 child: CustomButton(
                   onPressed: isEmailFilled
                       ? () {
-                          context.go('/enterCode');
+                          context.push('/enterCode');
                         }
                       : null,
                   // AppColors.primaryOrange

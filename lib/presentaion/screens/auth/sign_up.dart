@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:snape_tour/core/custom_assets/assets.gen.dart';
 import 'package:snape_tour/presentaion/widgets/saym_customInput/saym_customInput.dart';
@@ -41,22 +42,12 @@ class _SignUpState extends State<SignUp> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     // Logo
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 30),
-                      height: 80,
-                      width: 80,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: const Icon(
-                        Icons.travel_explore,
-                        size: 40,
-                        color: Colors.green,
-                      ),
+                    Assets.images.snaptourlogo51.image(
+                      height: 50.h,
+                      width: 50.w,
+                      fit: BoxFit.contain,
                     ),
-
-                    // Title
+                    const SizedBox(height: 20), // Title
                     Text(
                       "Create an account",
                       style: GoogleFonts.roboto(
@@ -113,7 +104,9 @@ class _SignUpState extends State<SignUp> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          context.push("/siginInViews");
+                        },
                         child: Text(
                           "Sign up",
                           style: GoogleFonts.roboto(
@@ -135,7 +128,9 @@ class _SignUpState extends State<SignUp> {
                           style: GoogleFonts.roboto(color: Colors.white),
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            context.push("/siginInViews");
+                          },
                           child: Text(
                             "Sign in",
                             style: GoogleFonts.roboto(

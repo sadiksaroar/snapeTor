@@ -20,6 +20,7 @@ class AppRoutePaths {
 
   // ++++++++++++++++++ChatBoot page start here++++++++++++
   static const String chatBoot = "/chatBoot";
+  static const String chatBootDemo = "/chatBootDemo";
 
   // ==================ChatBoot page end here==============
 

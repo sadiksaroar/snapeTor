@@ -64,7 +64,7 @@ class _SetNewPasswordState extends State<SetNewPassword> {
             fit: BoxFit.contain,
           ),
           onPressed: () {
-            context.pop(); // back navigation
+            context.pop(""); // back navigation
           },
         ),
         elevation: 0,
@@ -153,7 +153,9 @@ class _SetNewPasswordState extends State<SetNewPassword> {
                 child: CustomButton(
                   onPressed: isCodeFilled
                       ? () {
-                          context.go('/passwordUpdate'); // navigate after reset
+                          context.push(
+                            '/passwordUpdate',
+                          ); // navigate after reset
                         }
                       : null, // disables when invalid
                   backgroundColor: isCodeFilled
